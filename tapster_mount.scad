@@ -2,11 +2,11 @@ beam_unit = 8;
 base_width = 88; // 11 units
 base_height = 153; // 19 units
 
-corner_radius = 5;
+corner_radius = 10;
 
-phone_thickness = 5;
-tab_thickness = 1;
-tab_diameter = 10;
+phone_thickness = 11;
+tab_thickness = 1.5;
+tab_diameter = 16;
 phone_width = 64;
 phone_height = 130;
 
@@ -15,7 +15,7 @@ combined_thickness = phone_thickness + tab_thickness;
 brick_size = beam_unit * 4;
 
 peg_height = 5;
-peg_diameter = 5;
+peg_diameter = 4;
 
 module peg() {
 	offset = beam_unit/2;
@@ -31,9 +31,9 @@ module block() {
 			cube(size=[brick_size,brick_size,combined_thickness]);
 			translate([x_phone_offset,y_phone_offset,-1])
 				cube(size=[phone_width,phone_height,combined_thickness+2]);
-			translate([0,0,-1])
+			translate([0,0,-2])
 				edge();
-			translate([0,0,1])
+			translate([0,0,2])
 				edge();
 		}
 		translate([x_phone_offset,y_phone_offset,0]) {
