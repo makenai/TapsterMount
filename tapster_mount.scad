@@ -7,6 +7,7 @@ corner_radius = 12;
 phone_thickness = 11;
 tab_thickness = 1.5;
 tab_diameter = 20;
+
 phone_width = 60;
 phone_height = 125;
 
@@ -16,7 +17,7 @@ brick_height = beam_unit * 5;
 brick_width  = beam_unit * 4;
 
 peg_height = 5;
-peg_diameter = 4.5;
+peg_diameter = 4.25;
 
 module peg() {
 	offset = beam_unit/2;
