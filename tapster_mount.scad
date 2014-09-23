@@ -8,7 +8,7 @@ phone_thickness = 11;
 tab_thickness = 1.5;
 tab_diameter = 20;
 
-phone_width = 60;
+phone_width = 59;
 phone_height = 125;
 
 
