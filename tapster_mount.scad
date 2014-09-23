@@ -4,13 +4,15 @@ base_height = 153; // 19 units
 
 corner_radius = 12;
 
-phone_thickness = 11;
+
 tab_thickness = 1.5;
 tab_diameter = 20;
 
-phone_width = 59;
-phone_height = 125;
+phone_tolerance = 0.5;
 
+phone_width = 58.6 + phone_tolerance;
+phone_height = 123.8 + phone_tolerance;
+phone_thickness = 7.6 + phone_tolerance;
 
 combined_thickness = phone_thickness + tab_thickness;
 brick_height = beam_unit * 5;
